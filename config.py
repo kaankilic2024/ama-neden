@@ -286,7 +286,7 @@ GECICI_DOSYALARI_SIL = True
 
 # Arka plan muzigi: assets/music klasorune telifsiz mp3 koyarsan otomatik kullanilir
 MUZIK_KULLAN = True
-MUZIK_SESI = 0.17           # 0.05-0.20 arasi; konusmayi bastirmamali
+MUZIK_SESI = 0.13           # 0.05-0.20 arasi; konusmayi bastirmamali
 
 # YouTube sesi -14 LUFS'a normalize eder. Kendi videomuz bunun altinda kalirsa
 # diger videolardan kisik duyulur.
@@ -313,7 +313,7 @@ TOKEN_DOSYASI = DATA_DIR / "youtube_token.json"   # otomatik olusur, PAYLASMA
 YOUTUBE_KATEGORI_ID = "27"          # 27 = Education (tarih icin uygun)
 # "public" = herkese acik, "unlisted" = link ile, "private" = sadece sen
 # Ilk haftalarda "private" birakip her videoyu izlemek daha guvenli olur.
-YOUTUBE_GIZLILIK = os.getenv("YOUTUBE_GIZLILIK", "private")   # tarih icerigi -- once kontrol et
+YOUTUBE_GIZLILIK = os.getenv("YOUTUBE_GIZLILIK", "public")
 COCUKLAR_ICIN = False                # yetiskin icerigi
 YOUTUBE_DIL = "tr"
 ALTYAZI_YUKLE = True
