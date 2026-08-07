@@ -57,9 +57,35 @@ ANLATIM METNI KURALLARI (Turkce):
 - Akici, samimi, anlasilir Turkce. Sohbet eder gibi.
 - Teknik terim kullanacaksan hemen ardindan sade bir aciklama ver.
 - Kisa ve orta cumleleri karistir; monoton olmasin.
-- Ilk sahne ilk 5 saniyede soruyu net sor. Merak uyandiran bir sekilde.
-- Son sahne cevabi toparlamali ve dogal bir kapanis yapmali.
-- Kapanista abone hatirlatmasi yapabilirsin ama zorlama olmasin.
+
+ILK SAHNE -- EN KRITIK KISIM:
+Izleyicilerin cogu ilk 3 saniyede kaydirip geciyor. Ilk sahne bunu engellemeli.
+- Ilk cumle EN FAZLA 10 KELIME olsun. Kisa, vurucu, net.
+- Selamlama YAPMA. "Merhaba", "hos geldiniz", "bugun sizlerle" YASAK.
+- Aciklama ile baslama. Once carpici iddiayi at, aciklamayi sonra yap.
+- Su uc kalıptan birini kullan:
+    (a) Sasirtici iddia:  "Bu iki deniz yan yana ama birbirine karismiyor."
+    (b) Izleyiciyi icine alan soru:  "Telefonunu sarjda unutuyor musun? Sebebi ilginc."
+    (c) Beklentiyi bozma:  "Ucaklarin beyaz olmasinin sebebi estetik degil."
+- MERAK BOSLUGU BIRAK: cevabin varligini duyur ama cevabi verme.
+    YANLIS: "Ucaklar beyazdir cunku beyaz isigi yansitir."   (cevap verildi, merak bitti)
+    DOGRU : "Ucaklarin beyaz olmasinin sasirtici bir sebebi var."  (merak surdu)
+- Ikinci sahnede de cevabi tam verme; once sorunun ilginc yanini derinlestir.
+
+SABIT FORMAT KIMLIGI:
+Izleyicinin kanali tanimasi icin her video ayni kalibi kullanmali.
+- Ilk sahnenin anlatimi bittikten SONRA, ikinci sahnenin basinda bir kez
+  "Ama neden?" ifadesi gecsin. Bu kanalin imzasi.
+- Zorlama olmasin; cumleye dogal sekilde yedir.
+    Ornek: "Iki deniz yan yana ama karismiyor. Ama neden?"
+
+SON SAHNE -- ABONE CAGRISI:
+- Once cevabi tek cumleyle topla.
+- Sonra abone olmak icin SOMUT bir sebep sun. Sadece "abone ol" deme.
+    DOGRU : "Her gun boyle bir soru cevapliyoruz. Abone ol, kacirma."
+    DOGRU : "Bunun gibi merak ettiklerin icin takipte kal."
+    YANLIS: "Abone olmayi ve begenmeyi unutmayin."   (herkes bunu diyor, etkisiz)
+- Kisa tut. Kapanis 12 kelimeyi gecmesin.
 
 DOGRULUK KURALLARI:
 - SADECE emin oldugun, genel kabul gormus bilgileri anlat.
@@ -87,6 +113,19 @@ GORSEL KURALLARI (Ingilizce yaz):
     Ornek: "Ortacagda uyku" konusu icin -> "candle in dark room"
 - Stil, isik, cekim acisi YAZMA. Arama motoru bunlari anlamaz.
 - Ardisik sahnelerde FARKLI nesneler/mekanlar iste; ayni terimi tekrarlama.
+
+BASLIK KURALLARI (cok onemli -- tiklanmayi bu belirliyor):
+- Merak boslugu yarat: konuyu belli et ama cevabi verme.
+    YANLIS: "Ucaklar Beyazdir Cunku Isigi Yansitir"   (cevap baslikta, tiklama gerekmez)
+    DOGRU : "Ucaklarin Beyaz Olmasinin Gercek Sebebi"
+- Su kaliplar iyi calisir:
+    "... Olmasinin Gercek Sebebi"
+    "Kimse ...  Fark Etmiyor"
+    "... Sandigin Gibi Degil"
+    "Neden ...? Cevap Sasirtici"
+- 45-60 karakter arasi tut. Telefonda uzun basliklar kesiliyor.
+- BUYUK HARFLE BAGIRMA, asiri emoji kullanma. En fazla bir emoji.
+- Clickbait yapma: baslikta soyledigin sey videoda gercekten olmali.
 
 Cevabini SADECE su JSON formatinda ver, baska hicbir sey yazma:
 {{
@@ -119,7 +158,7 @@ Her sahnenin anlatim metni: {kelime_min}-{kelime_max} kelime
 Simdi senaryoyu yaz."""
 
 MOCK_SENARYO = {
-    "baslik": "Neden Uçakların Çoğu Beyaz?",
+    "baslik": "Uçakların Beyaz Olmasının Gerçek Sebebi",
     "aciklama": "Havaalanında etrafına bak: uçakların neredeyse hepsi beyaz. "
                 "Bu bir moda değil, tamamen mühendislik kararı. "
                 "Sebebi düşündüğünden çok daha mantıklı.\n\n"
@@ -130,12 +169,11 @@ MOCK_SENARYO = {
     "karakter_sayfasi": "",
     "sahneler": [
         {"no": 1, "karakter_sahnede": False,
-         "anlatim": "Havaalanında etrafına bak. Uçakların neredeyse hepsi beyaz. "
-                    "Peki neden?",
+         "anlatim": "Uçakların beyaz olmasının sebebi estetik değil.",
          "gorsel_prompt": "rows of white passenger aircraft parked at an airport "
                           "terminal under bright daylight, wide aerial shot"},
         {"no": 2, "karakter_sahnede": False,
-         "anlatim": "Cevap estetikle ilgili değil. Tamamen mühendislikle ilgili.",
+         "anlatim": "Tamamen mühendislikle ilgili. Ama neden?",
          "gorsel_prompt": "close-up of an aircraft fuselage surface, smooth "
                           "metallic panels and rivets, soft directional light"},
         {"no": 3, "karakter_sahnede": False,
@@ -154,7 +192,7 @@ MOCK_SENARYO = {
                           "with a flashlight, hangar interior, medium shot"},
         {"no": 6, "karakter_sahnede": False,
          "anlatim": "Yani o beyaz renk bir tercih değil, bir çözüm. "
-                    "Daha fazlası için kanala göz at.",
+                    "Her gün böyle bir soru cevaplıyoruz, abone ol.",
          "gorsel_prompt": "a white airplane taking off into a golden sunset sky, "
                           "dramatic wide shot"},
     ],
@@ -196,6 +234,60 @@ def _benzerlik_kontrol(hamlar: List[tuple]) -> List[str]:
             nolar = "-".join(str(n) for n, _ in ucler)
             uyarilar.append(f"sahne {nolar} (hepsinde '{sorted(ortak)[0]}' var)")
     return uyarilar
+
+
+
+# Ilk sahnede olmamasi gerekenler: izleyiciyi kaydirtan kaliplar
+ZAYIF_ACILIS = [
+    r"^merhaba", r"^selam", r"^hos ?geldin", r"^bugun sizlerle",
+    r"^bu videoda", r"^herkese merhaba", r"^sevgili", r"^degerli",
+    r"^kanalimiza", r"^videomuza",
+]
+
+# Kapanista etkisiz kalip
+ZAYIF_KAPANIS = [
+    r"abone olmayi ve begenmeyi unutmayin",
+    r"begenmeyi ve abone olmayi unutmayin",
+    r"kanalimiza abone olmayi unutmayin",
+]
+
+
+def _acilis_kontrol(sahneler: List[Dict[str, Any]]) -> List[str]:
+    """Ilk sahnenin izleyiciyi tutacak guclukte olup olmadigini kontrol eder.
+
+    Izleyicilerin cogu ilk 3 saniyede karar veriyor; zayif bir acilis
+    videonun izlenme suresini dogrudan dusuruyor.
+    """
+    if not sahneler:
+        return []
+
+    uyarilar = []
+    ilk = sahneler[0]["anlatim"].strip()
+    sade = ilk.lower().translate(_SAPKA)
+
+    for kalip in ZAYIF_ACILIS:
+        if re.search(kalip, sade):
+            uyarilar.append(f"zayif acilis: '{ilk[:35]}...'")
+            break
+
+    # Ilk cumle cok uzunsa vurucu degildir
+    ilk_cumle = re.split(r"(?<=[.!?])\s", ilk)[0]
+    kelime = len(ilk_cumle.split())
+    if kelime > 13:
+        uyarilar.append(f"ilk cumle cok uzun ({kelime} kelime, hedef 10)")
+
+    return uyarilar
+
+
+def _kapanis_kontrol(sahneler: List[Dict[str, Any]]) -> List[str]:
+    """Kapanista somut bir abone sebebi var mi?"""
+    if not sahneler:
+        return []
+    son = sahneler[-1]["anlatim"].lower().translate(_SAPKA)
+    for kalip in ZAYIF_KAPANIS:
+        if re.search(kalip, son):
+            return ["kapanis etkisiz kalip kullaniyor"]
+    return []
 
 
 def _risk_kontrol(senaryo: Dict[str, Any]) -> List[str]:
@@ -398,6 +490,13 @@ def senaryo_uret(fikir: Dict[str, Any]) -> Dict[str, Any]:
     # Riskli iddialari otomatik yumusat (elle kontrol yukunu azaltir)
     from utils import iddia
     iddia.yumusat(senaryo)
+
+    # Acilis ve kapanis gucu -- izlenme suresini en cok bunlar etkiliyor
+    zayif = _acilis_kontrol(temiz_sahneler) + _kapanis_kontrol(temiz_sahneler)
+    if zayif:
+        for z in zayif:
+            logger.uyari(f"IZLENME RISKI -> {z}")
+        senaryo["_acilis_uyarisi"] = zayif
 
     # Yumusatmadan SONRA kalan kesin iddialari bildir
     kesin = _kesinlik_kontrol(temiz_sahneler)
