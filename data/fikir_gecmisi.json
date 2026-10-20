@@ -1,20 +1,5 @@
 [
   {
-    "konu": "Neden kıtalar arasında en çok kuzey ile güney değil de doğu ile batı arasında uygarlıklar gelişti?",
-    "tarih": "2026-08-05T17:43:52",
-    "tip": "shorts"
-  },
-  {
-    "konu": "Neden Şili bu kadar uzun ve ince bir ülkedir?",
-    "tarih": "2026-08-05T17:48:25",
-    "tip": "shorts"
-  },
-  {
-    "konu": "Neden Hollanda'nın büyük bir kısmı deniz seviyesinin altındadır?",
-    "tarih": "2026-08-05T17:56:14",
-    "tip": "uzun"
-  },
-  {
     "konu": "Şarjı tamamen bitirmeden telefon şarj etmek bataryayı bozar mı?",
     "tarih": "2026-08-06T12:54:12",
     "tip": "shorts"
@@ -997,6 +982,21 @@
   {
     "konu": "Güneş neden aslında sarı veya turuncu renkte değildir?",
     "tarih": "2026-10-19T17:22:47",
+    "tip": "shorts"
+  },
+  {
+    "konu": "Somon balıkları doğdukları nehir yatağını yıllar sonra nasıl bulur?",
+    "tarih": "2026-10-20T15:33:11",
+    "tip": "shorts"
+  },
+  {
+    "konu": "Kedilerin gözleri neden karanlıkta ışık saçıyormuş gibi parlar?",
+    "tarih": "2026-10-20T15:35:38",
+    "tip": "shorts"
+  },
+  {
+    "konu": "Bukalemunlar renklerini neden aslında ortama uyum sağlamak için değiştirmez?",
+    "tarih": "2026-10-20T15:36:00",
     "tip": "shorts"
   }
 ]
