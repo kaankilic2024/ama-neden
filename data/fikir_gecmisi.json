@@ -1,20 +1,5 @@
 [
   {
-    "konu": "Şarjı tamamen bitirmeden telefon şarj etmek bataryayı bozar mı?",
-    "tarih": "2026-08-06T12:54:12",
-    "tip": "shorts"
-  },
-  {
-    "konu": "Klavye tuşları neden alfabetik sırada değil de QWERTY diziliminde?",
-    "tarih": "2026-08-06T12:56:21",
-    "tip": "shorts"
-  },
-  {
-    "konu": "Dokunmatik ekranlar parmağımızın dokunduğunu nasıl anlar?",
-    "tarih": "2026-08-06T12:58:26",
-    "tip": "uzun"
-  },
-  {
     "konu": "Kodak filmli makineleri mucidi olmasına rağmen neden battı?",
     "tarih": "2026-08-07T11:42:16",
     "tip": "shorts"
@@ -997,6 +982,21 @@
   {
     "konu": "Bukalemunlar renklerini neden aslında ortama uyum sağlamak için değiştirmez?",
     "tarih": "2026-10-20T15:36:00",
+    "tip": "shorts"
+  },
+  {
+    "konu": "Şehir haritalarında kuzey yönü neden her zaman üsttedir?",
+    "tarih": "2026-10-21T15:48:51",
+    "tip": "shorts"
+  },
+  {
+    "konu": "Dünya haritalarında Grönland neden Afrika kadar büyük görünür?",
+    "tarih": "2026-10-21T15:52:10",
+    "tip": "shorts"
+  },
+  {
+    "konu": "Çöller neden aslında her zaman sıcak olmak zorunda değildir?",
+    "tarih": "2026-10-21T15:53:05",
     "tip": "shorts"
   }
 ]
